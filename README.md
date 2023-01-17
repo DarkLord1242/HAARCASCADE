@@ -1,1 +1,7 @@
-# Face_eye_detection
+# Face eye detection using haar cascade classifier
+## Haar Cascade:
+Haar cascade classifiers are machine learning-based object detection algorithms used to identify objects in images or video. They were developed by Paul Viola and Michael Jones in 2001 for use in the Viola-Jones object detection framework. Haar cascade classifiers are trained using a set of positive and negative images, and work by detecting features in the image that match the features in the classifier. They are often used for face and eye detection in computer vision applications. The classifier is trained to detect a specific object, such as a face or an eye, by analyzing thousands of positive and negative images. Once trained, the classifier can be used to detect the object in new images or video.
+
+## This project:
+
+When using the Haar cascade classifier in OpenCV to detect faces and eyes in a live feed, you would typically start by loading the pre-trained classifier files for detecting faces and eyes. Then you would use the OpenCV's VideoCapture class to capture the video stream from a camera or a file. After that, you would use the cv2.CascadeClassifier.detectMultiScale() method on each frame of the video stream to detect the faces and eyes. This method returns a list of rectangles that enclose the detected objects. You could then use OpenCV's cv2.rectangle() function to draw a rectangle around the detected objects in the frame, and display the modified frame.
